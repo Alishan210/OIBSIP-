@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth System - Login / Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <!-- Auth Navigation Tabs -->
+        <div class="tab-header">
+            <button id="loginTabBtn" class="tab-btn active">Login</button>
+            <button id="registerTabBtn" class="tab-btn">Register</button>
+        </div>
+
+        <div id="alertBox" class="alert hidden"></div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="auth-form">
+            <h2>Welcome Back</h2>
+            <div class="form-group">
+                <label for="loginIdentifier">Username or Email</label>
+                <input type="text" id="loginIdentifier" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" required>
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+        </form>
+
+        <!-- Registration Form -->
+        <form id="registerForm" class="auth-form hidden">
+            <h2>Create Account</h2>
+            <div class="form-group">
+                <label for="regUsername">Username</label>
+                <input type="text" id="regUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="regPassword">Password</label>
+                <input type="password" id="regPassword" placeholder="Min 8 chars, at least 1 number" required>
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa-solid fa-user-plus"></i> Register</button>
+        </form>
+
+        <!-- Protected Dashboard View -->
+        <div id="dashboardView" class="dashboard-view hidden">
+            <div class="dashboard-card">
+                <div class="avatar"><i class="fa-solid fa-circle-user"></i></div>
+                <h2>Welcome, <span id="userDisplayName">User</span>!</h2>
+                <p>This is your protected dashboard section. You are successfully authenticated.</p>
+                <button id="logoutBtn" class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

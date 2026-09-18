@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Checklist: Font Styles (Merriweather Serif for Headings, Inter Sans-Serif for Body) */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    color: #334155;
+    background-color: #f8fafc; /* Background Colour 1 */
+}
+
+h1, h2, h3, blockquote {
+    font-family: 'Merriweather', serif;
+}
+
+/* Header Styling */
+.hero-header {
+    background-color: #0f172a; /* Background Colour 2 */
+    color: #ffffff;
+    text-align: center;
+    padding: 3.5rem 1rem;
+}
+
+.hero-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    font-style: italic;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Image Section */
+.image-section {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    max-height: 420px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+figcaption {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: #64748b;
+    font-style: italic;
+}
+
+/* Distinct Quote Section */
+.quote-section {
+    background-color: #e0e7ff; /* Background Colour 3 */
+    border-left: 6px solid #4f46e5;
+    padding: 2rem;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 3rem;
+}
+
+blockquote {
+    font-size: 1.25rem;
+    color: #1e1b4b;
+    font-style: italic;
+}
+
+cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #4f46e5;
+    font-style: normal;
+}
+
+/* Bio Section */
+.bio-section {
+    margin-bottom: 3rem;
+}
+
+.bio-section h2, .timeline-section h2 {
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 0.4rem;
+}
+
+.bio-section p {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+
+/* Timeline Section */
+.timeline-section {
+    margin-bottom: 3rem;
+}
+
+.timeline-list {
+    padding-left: 1.5rem;
+}
+
+.timeline-list li {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    padding-left: 0.5rem;
+}
+
+.timeline-list strong {
+    color: #4f46e5;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    .hero-header h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .quote-section {
+        padding: 1.2rem;
+    }
+
+    blockquote {
+        font-size: 1.05rem;
+    }
+}

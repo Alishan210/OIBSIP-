@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Digital Resume</title>
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Smooth Scroll Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <nav class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- 1. Profile / Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <!-- Avatar Placeholder (FontAwesome Icon ya Profile Image) -->
+            <div class="avatar-box">
+                <i class="fa-solid fa-user-astronaut avatar-icon"></i>
+            </div>
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Ali Shan</span></h1>
+                <h2>Frontend Web Developer</h2>
+                <p>Passionate about creating clean, beautiful, and user-friendly web layouts.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section class="about section-padding" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>
+                I am a dedicated student and aspiring frontend developer with a strong foundation in HTML5 and CSS3. 
+                I love transforming simple code into visual digital experiences and continuously learning modern web practices. 
+                My goal is to build accessible, clean, and responsive websites for clients and open-source projects.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. Skills Section (Visual Grid) -->
+    <section class="skills section-padding" id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-html5 skill-icon html"></i>
+                <h3>HTML5</h3>
+                <p>Semantic structure & Web standards</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt skill-icon css"></i>
+                <h3>CSS3</h3>
+                <p>Flexbox, Grid & Responsive design</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-js skill-icon js"></i>
+                <h3>JavaScript</h3>
+                <p>Basic DOM & Interactive features</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt skill-icon git"></i>
+                <h3>Git & GitHub</h3>
+                <p>Version control & Collaboration</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projects Section (At least 2 Cards) -->
+    <section class="projects section-padding" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Product Landing Page</h3>
+                    <p>A polished static landing page built with pure HTML5 and CSS3 Flexbox. Completely responsive.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Flexbox</span>
+                    </div>
+                    <a href="https://github.com/Alishan210" target="_blank" class="github-link">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A personal résumé website featuring smooth scrolling, responsive visual grids, and custom styling.</p>
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Responsive</span>
+                    </div>
+                    <a href="https://github.com/Alishan210" target="_blank" class="github-link">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form class="contact-form" action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Connect With Me</h3>
+                <p><i class="fa-solid fa-envelope"></i> email@example.com</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Alishan210" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ali Shan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
